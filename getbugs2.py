@@ -60,3 +60,5 @@ with open("bug_report_" + time.strftime("%Y%m%d%H%M%S") + ".csv", mode="w") as f
         print(output_string, file=f)
         print(output_string)
 s.close()
+
+temp = input('Please hit Enter to quit')
