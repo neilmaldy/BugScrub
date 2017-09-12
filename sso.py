@@ -45,5 +45,7 @@ def get_authenticated_session(user, passwd, env='prod'):
 
     sess.post(post_url, data=data)
     resp2 = sess.get(get_url)
-
-    return sess
+    if '<title>NetApp Login Page</title>' in resp2.text:
+        return None
+    else:
+        return sess
