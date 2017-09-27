@@ -17,6 +17,7 @@ bug_file = 'bugs.txt'
 if os.path.exists(bug_file):
     print("\nFound burt id list in bugs.txt")
 else:
+    temp = input("\nPlease create bugs.txt with one burt id per line and try again")
     sys.exit('\nPlease create bugs.txt with one burt id per line and try again')
 
 
